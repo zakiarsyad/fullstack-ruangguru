@@ -25,8 +25,8 @@ LIBS= -lssl -lz
 
 init-db: init-db.o
 
-update-cache: update-cache.o read-cache.o
-	$(CC) $(CFLAGS) -o update-cache update-cache.o read-cache.o $(LIBS)
+update-cache: update-cache.o read-cache.o # change made by dev1
+	$(CC) $(CFLAGS) -o update-cache update-cache.o read-cache.o $(LIBS) # change made by dev1
 
 show-diff: show-diff.o read-cache.o
 	$(CC) $(CFLAGS) -o show-diff show-diff.o read-cache.o $(LIBS)
